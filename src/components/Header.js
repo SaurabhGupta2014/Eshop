@@ -12,6 +12,7 @@ function Header(props) {
 
     const logout=()=>{
         localStorage.removeItem('currentUser');
+        localStorage.removeItem('cartItems');
         window.location.reload(); 
     }
 
