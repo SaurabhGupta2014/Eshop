@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Layout from '../components/Layout';
 import Loader from '../components/Loader';
+import {FaHandPointRight} from 'react-icons/fa';
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import { toast } from 'react-toastify';
 function RegisterPage(props) {
@@ -23,6 +23,7 @@ function RegisterPage(props) {
             setEmail('');
         } catch (error) {
             toast.error('Registration failed!');
+            console.log(error);
             setLoading(false);
         }
     }
@@ -49,9 +50,10 @@ function RegisterPage(props) {
                         <input type='password' className='form-control' placeholder='Password' value={password} onChange={(e) => setPassword(e.target.value)} />
                         <input type='password' className='form-control' placeholder='Confirm Password' value={cpassword} onChange={(e) => setCPassword(e.target.value)} />
 
-                        <button className='mt-3' onClick={register}>REGISTER</button>
+                        <button className='mt-3 mybutton' onClick={register}>REGISTER</button>
                         <hr/>
-                        <Link to='/login'>Click here to Login</Link>
+                        <FaHandPointRight style={{color :'green'}}/>
+                        <Link to='/login' style={{color :'green' , fontWeight:'bold'}}>  Click here to Login</Link>
                     </div>
 
                 </div>

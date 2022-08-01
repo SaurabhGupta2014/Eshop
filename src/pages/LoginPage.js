@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Layout from '../components/Layout';
+import {FaHandPointRight} from 'react-icons/fa';
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import Loader from '../components/Loader';
 import { toast } from 'react-toastify';
@@ -40,9 +40,10 @@ function LoginPage(props) {
                         <input type='text' className='form-control' placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)} />
                         <input type='password' className='form-control' placeholder='Password' value={password} onChange={(e) => setPassword(e.target.value)} />
                         
-                        <button className='mt-3' onClick={login}>LOGIN</button>
+                        <button className='mt-3 mybutton' onClick={login}>LOGIN</button>
                         <hr/>
-                        <Link to='/register'>Click here to Register</Link>
+                        <FaHandPointRight style={{color :'green'}}/>
+                        <Link to='/register' style={{color :'green' , fontWeight:'bold'}}> Click here to Register</Link>
                     </div>
 
                 </div>

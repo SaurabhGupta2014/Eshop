@@ -67,16 +67,19 @@ function Homepage(props) {
     }
 
 
+    // ADD INITIAL PRODUCTS TO DATABASE
+
     // function addProductData(){
     //     fireproducts.map(async (product)=>{
     //         try {
     //             await addDoc(collection(fireDB, "products"), product);
+    //             console.log("ADDED SUCCESSFULLY");
     //         } catch (error) {
     //             console.log(error);
     //         }
     //     });
     // }
-
+   
     useEffect(()=>{
         localStorage.setItem('cartItems' ,JSON.stringify(cartItems));
     },[cartItems]);
@@ -89,6 +92,7 @@ function Homepage(props) {
     return (
         <Layout loading={loading}>
             <div className='container'>
+            {/* <button onClick={()=>addProductData()}>ADD</button> */}
                 <div className='d-flex w-50 my-3 '>
                     <input type='text' value={searchKey} 
                     placeholder='search items' 
@@ -112,14 +116,14 @@ function Homepage(props) {
                         .map((product) => {
                             return (
                                 <div className='col-md-4'>
-                                    <div className='m-2 p-1 product position-relative'>
+                                    <div className='m-2 p-1 product position-relative curve'>
                                         <div className='product-content'>
                                             <p>{product.name}</p>
                                             <div className='text-center'>
                                                 <img src={product.imageURL} alt="" className='product-img' />
                                             </div>
                                         </div>
-                                        <div className='product-actions'>
+                                        <div className='product-actions curve'>
                                             <h2>{product.price} RS/-</h2>
                                             <div className='d-flex'>
                                                 <button className='mx-2' onClick={()=>addToCart(product)}>ADD TO CART</button>

@@ -12,8 +12,9 @@ input , textarea{
 
 .register-form{
     padding: 20px;
-    background-color: white;
+    background-color: rgba(197, 189, 189, 0.758);
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 25px;
 }
 
 .register-parent{
@@ -39,8 +40,20 @@ input , textarea{
 
 .login-form{
     padding: 20px;
-    background-color: white;
+    background-color: rgba(197, 189, 189, 0.758);
+    border-radius: 25px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+
+.mybutton{
+    background-color: rgb(34, 164, 34);
+    color: white;
+    border-radius: 15px;
+    padding: 10px 10px;
+}
+.mybutton:hover{
+    background-color: rgb(198, 163, 49);
 }
 
 .login-parent{

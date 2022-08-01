@@ -1,6 +1,8 @@
 .product{
-    
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    background-color: white !important;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    /* box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset; */
+    /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
 }
 
 .product p{
@@ -14,7 +16,10 @@
 .product:hover .product-actions{
     opacity: 1;
 }
-
+.curve{
+    border-radius: 25px !important;
+    padding: 20px 20px !important;
+}
 .product-actions{
     position:absolute;
     display: flex;
@@ -26,8 +31,8 @@
     right: 0;
     height: 100%;
     opacity: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
+    background-color: rgba(43, 26, 15, 0.729);
+    color: #f9e5da !important;
     font-weight: bold !important;
 }
 

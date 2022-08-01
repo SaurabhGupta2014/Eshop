@@ -3,9 +3,9 @@ import React from 'react';
 function Footer(props) {
     return (
         <div className='footer'>
-           <p>Designed and Developed BY </p>
-           <hr/>
-           <p>S.K. Gupta</p>
+           <span style={{color: ' lightgrey'}}>Designed and Developed By :- </span><span style={{fontWeight : 'bold'}}>SK Gupta</span>
+      
+          
         </div>
     );
 }

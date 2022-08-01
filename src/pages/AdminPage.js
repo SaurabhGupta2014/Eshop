@@ -103,6 +103,7 @@ function AdminPage(props) {
             handleClose();
         } catch (error) {
             toast.error('product add failed');
+            console.log(error);
             setLoading(false);
         }
     }

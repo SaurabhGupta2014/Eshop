@@ -8,10 +8,17 @@
 }
 
 .navbar{
-    background-color: #003F5C !important;
+    background-color: #9f4a26 !important;
+    
 }
 
+.nav-link:hover{
+    color: #f0b191 !important;
+}
 
+body{
+    background-color :#fee9d4d8;
+}
 .navbar-brand{
     color: white !important;
 }
@@ -37,15 +44,16 @@ right: 0;
 }
 
 button{
-    background-color: #003F5C;
-    box-shadow: none;
-    border: 1px solid rgba(255, 255, 255, 0.783);
-    color: white;
-    padding: 5px;
+    
+    background-image: linear-gradient(#9f4a26,#f0b191 );
+    color: black;
+    border-radius: 15px;
+    padding: 8px 8px;
 }
 
 button:hover{
-    background-color: tomato;
+   
+    background-image: linear-gradient(#f0b191, #9f4a26);
 }
 
 .loader{
@@ -70,4 +78,11 @@ button:hover{
 
 .nav-tabs{
     background-color: cadetblue;
+}
+
+.footer{
+    position: relative;
+    bottom:0;
+    width:100%;
+    background-color: #3e4042;
 }
