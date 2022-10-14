@@ -212,6 +212,10 @@ function AdminPage(props) {
                    return <table className='table mt-3 order'>
                     <thead>
                         <tr>
+                            <th>{order.addressInfo.name}</th>
+                            <th>{order.addressInfo.phonenumber}</th>
+                        </tr>
+                        <tr>
                             <th>Image</th>
                             <th>Name</th>
                             <th>Price</th>
